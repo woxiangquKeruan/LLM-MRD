@@ -18,6 +18,6 @@ You can run pip install -r requirements.txt to deploy the environment.
 3.  **CLIP:** Download the pretrained CLIP model from "[Chinese-CLIP](<link-to-clip>)" and move all files into the root directory.
 
 ## Training
-* **Preparation:** First, download the Weibo21, Weibo, and GossipCop datasets, along with the Qwen2.5-VL model. Then, run the `generate_reasoning_*.py` scripts (e.g., generate_reasoning_gossipcop.py) to generate reasoning data, followed by the `encode_reasoning.py` scripts to encode that data.
+* **Preparation:** First, download the Weibo21, Weibo, and GossipCop datasets, along with the Qwen2.5-VL model. Then, run the `generate_reasoning_*.py` scripts (e.g., `generate_reasoning_gossipcop.py`) to generate reasoning data, followed by the `encode_reasoning.py` scripts to encode that data.
 * **Start Training:** After processing the data, train the model by running `python main.py --dataset gossipcop` or `python main.py --dataset weibo21` or `python main.py --dataset weibo`.
 
