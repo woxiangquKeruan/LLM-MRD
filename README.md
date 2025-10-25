@@ -2,14 +2,7 @@
 You can run pip install -r requirements.txt to deploy the environment.
 ## Data Preparation
 1.  **Data Splitting:** In the experiments, we maintain the same data splitting scheme as the benchmarks.
-2.  **Weibo21 Dataset:** For the Weibo21 dataset, we follow the work from (Ying et al., 2023). You should send an email to Dr. Qiong Nan to get the complete multimodal multi-domain dataset Weibo21.
-3.  **Weibo Dataset:** For the Weibo dataset, we adhere to the work from (Wang et al., 2022). In addition, we have incorporated domain labels into this dataset. You can download the final processed data from the link below. By using this data, you will bypass the data preparation step. Link: https://pan.baidu.com/s/1TGc-8RUH6BiHO1rjnzuPxQ code: qwer
-4.  **GossipCop Dataset:** For the GossipCop dataset, we followed the work of (XXX et al, 2023). You can download the final processed data from the link below. By using this data, you will bypass the data preparation step. Link: XXXX code: 1123
-4.  **Data Storage:**
-    * Place the processed Weibo data in the `./data` directory.
-    * Place the Weibo21 data in the `./Weibo_21` directory.
-    * Place the GossipCop data in the `./gossipcop` directory.
-5.  **Data preparation:** Use `clip_data_pre`, `data_pre`, `weibo21_data_pre` and `weibo21_clip_data_pre` to preprocess the data of Weibo and Weibo21, respectively, in order to save time during the data loading phase.
+2.  **Dataset:** We follow the same data preprocessing pipeline of Bootstrapping Your Own Representations for Fake News Detection. Please use the data prepare scripts provided in preprocessing or the preprocessing scripts in prior work to prepare data for each datasets. For all datasets (Weibo/Weibo-21/GossipCop), please download from the official source.
 
 ## LLM Prompts
 1.  **Prompt 1 (Text-based):** "Analyze this text for misleading language, emotional manipulation, or logical fallacies. Please reason step by step to determine the likelihood of falsity and manipulation."
