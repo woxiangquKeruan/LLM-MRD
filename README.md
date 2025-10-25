@@ -11,6 +11,11 @@ You can run pip install -r requirements.txt to deploy the environment.
     * Place the GossipCop data in the `./gossipcop` directory.
 5.  **Data preparation:** Use `clip_data_pre`, `data_pre`, `weibo21_data_pre` and `weibo21_clip_data_pre` to preprocess the data of Weibo and Weibo21, respectively, in order to save time during the data loading phase.
 
+## LLM Prompts
+1.  **Prompt 1 (Text-based):** "Analyze this text for misleading language, emotional manipulation, or logical fallacies. Please reason step by step to determine the likelihood of falsity and manipulation."
+2.  **Prompt 2 (Image-based):**: "Examine this image for signs of editing, unreasonable elements, or scenes that contradict common sense. Please reason step by step to determine the likelihood of falsity and manipulation."
+3.  **Prompt 3 (Cross-modal):** "Compare the text and image. Are there any contradictions, inconsistencies, or deliberately created false connections between them? Please reason step by step to determine the likelihood of falsity and manipulation."
+   
 ## Pretrained Models
 
 1.  **Roberta:** You can download the pretrained Roberta model from [Roberta](<link-to-roberta>) and move all files into the `./pretrained_model` directory.
